@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Garuda Foundation — Save Birds, Save Animals, Save Nature. A non-profit, non-political social organization dedicated to animal welfare and environmental protection in Jaunpur, Uttar Pradesh." />
+  <title>Garuda Foundation | Save Birds • Save Animals • Save Nature</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#1247a6;--blue2:#0b3277;--red:#d92825;--green:#2ca75d;--green-soft:#eafaf0;--ink:#142033;--muted:#61708a;--cream:#f8fbf7;--card:#fff;--line:#e4eaf2;--shadow:0 18px 50px rgba(18,71,166,.10);--radius:22px}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+    a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(228,234,242,.9)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--blue);letter-spacing:.5px}.brand img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:2px solid #eee}.brand span{font-family:'Playfair Display',serif;font-size:22px}.brand small{display:block;color:var(--red);font:700 10px 'DM Sans';letter-spacing:1.5px;text-transform:uppercase}
+    .navlinks{display:flex;gap:22px;align-items:center}.navlinks a{font-weight:600;font-size:14px;color:#39465a}.navlinks a:hover{color:var(--blue)}.nav-actions{display:flex;align-items:center;gap:12px}.nav-call{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border-radius:999px;background:linear-gradient(135deg,var(--green-soft),#dff5e7);border:1px solid rgba(44,167,93,.18);color:var(--blue2);font-weight:800;font-size:13px;box-shadow:0 8px 18px rgba(44,167,93,.10)}.nav-call img{width:16px;height:16px}.menu-wrap{display:flex;align-items:center;gap:10px}.menu{display:none;background:none;border:0;font-size:26px;color:var(--blue)}.menu-call{display:none;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;border:1px solid rgba(18,71,166,.12);background:var(--green-soft);color:var(--green);padding:0}.menu-call img{width:18px;height:18px}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#fff 0%,#f0f7ff 60%,#eefbf1 100%);padding:85px 0 80px}.hero:after{content:'';position:absolute;width:460px;height:460px;border-radius:50%;right:-180px;top:-180px;background:rgba(44,167,93,.10)}
+    .hero-grid{position:relative;z-index:1}.hero-copy{max-width:720px;position:relative;z-index:2}.hero h1.en{white-space:nowrap}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.dot{width:9px;height:9px;background:var(--red);border-radius:50%}
+    h1{font:700 clamp(34px,3.6vw,52px)/1.08 'Playfair Display',serif;color:var(--blue);margin:18px 0;max-width:660px}.hero h1 span{color:var(--red)}.lead{font-size:19px;color:var(--muted);max-width:680px}.cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s}.btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(18,71,166,.22)}.btn-primary:hover{transform:translateY(-2px);background:var(--blue2)}.btn-outline{border-color:#cbd6e7;background:#fff;color:var(--blue)}
+    .hero-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);text-align:center}.hero-card img{width:min(100%,360px);aspect-ratio:1;object-fit:contain;border-radius:20px}.hero-card .mini{font-size:12px;color:var(--muted);margin-top:12px}
+    .hero-visual{position:absolute;z-index:1;right:-18px;top:-72px;width:300px;height:300px;display:flex;align-items:center;justify-content:center;pointer-events:none}.hero-panel{width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center}.hero-lottie{width:100%;height:100%;transform:scaleX(-1)}.lottie-asset{width:100%;height:100%}
+    section{padding:82px 0}.section-head{max-width:760px;margin-bottom:38px}.kicker{color:var(--green);font-size:12px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}.section-head h2{font:700 clamp(32px,4vw,50px)/1.1 'Playfair Display',serif;margin:9px 0 12px;color:var(--blue2)}.section-head p{color:var(--muted);font-size:17px}
+    .about{background:#fff}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:start}.quote{background:linear-gradient(145deg,var(--blue),#0a377f);color:#fff;border-radius:28px;padding:38px 120px 38px 38px;position:relative;overflow:hidden}.quote:after{content:'“';position:absolute;right:18px;top:-20px;font:160px 'Playfair Display';opacity:.12}.quote h3{font:700 29px 'Playfair Display';margin:0 0 15px}.quote p{opacity:.9}.quote-lottie{position:absolute;right:14px;bottom:12px;width:112px;height:112px;opacity:.95}.pill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.pill{background:rgba(255,255,255,.12);padding:8px 12px;border-radius:99px;font-size:12px;font-weight:700}
+    .objectives-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;align-items:stretch}.obj{background:#fff;border:1px solid var(--line);padding:24px;border-radius:18px;box-shadow:0 8px 25px rgba(20,32,51,.04)}.obj .num{width:35px;height:35px;border-radius:10px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-weight:800;margin-bottom:18px}.obj h3{font-size:16px;margin:0 0 7px}.obj p{font-size:14px;color:var(--muted);margin:0}.objectives-visual{display:flex;align-items:center;justify-content:center;padding:12px;min-height:180px}.objective-dog{width:150px;height:150px}
+    .focus{background:#eef7f0}.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.focus-card{background:#fff;border-radius:20px;padding:30px;border:1px solid #dcebdd}.icon{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:#e8f7ec;padding:10px}.icon img,.icon svg{width:24px;height:24px;display:block}.focus-card h3{margin:18px 0 7px;color:var(--blue2)}.focus-card p{margin:0;color:var(--muted)}
+    .founders{background:#fff}.founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.founder{border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;gap:20px;align-items:center}.avatar{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:#eaf1ff;color:var(--blue);font:700 24px 'Playfair Display';flex:none}.founder h3{margin:0 0 4px}.founder p{margin:0;color:var(--muted);font-size:14px}.placeholder{border-style:dashed;background:#fafcff}
+    .governance{background:#f4f7fb}.gov-grid{display:grid;grid-template-columns:1fr;gap:25px}.gov-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px}.gov-card h3{font:700 26px 'Playfair Display';color:var(--blue2);margin-top:0}.gov-list{margin:0;padding-left:20px}.gov-list li{margin:10px 0;color:#45536a}.roles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.role{background:#f6f8fb;padding:12px 14px;border-radius:12px;font-weight:600;font-size:14px}
+    .contact{background:var(--blue2);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#c8d5eb}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}.contact-card{background:#fff;color:var(--ink);border-radius:24px;padding:28px}.contact-item{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border:0}.contact-icon{width:30px;display:flex;align-items:flex-start;padding-top:3px}.contact-icon img{width:21px;height:21px}.contact-item strong{display:block}.contact-item span,.contact-item a{color:var(--muted);font-size:14px}.contact-note{border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:30px;background:rgba(255,255,255,.06)}.contact-note h3{font:700 28px 'Playfair Display';margin-top:0}.contact-note p{color:#c8d5eb}
+    footer{background:#081f49;color:#b9c8df;padding:25px 0;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;align-items:center}.footer-brand{display:flex;align-items:center;gap:9px;font-weight:800;color:#fff}.footer-brand img{width:32px;height:32px;border-radius:50%;object-fit:cover}.footer-brand span{color:#ef5350}
+    .lang{border:1px solid #cbd6e7;background:#fff;border-radius:10px;padding:8px 10px;font-weight:700;color:var(--blue);cursor:pointer}.hi{display:none}
+    .quote{padding-right:185px}.quote-lottie{right:0;bottom:0;width:180px;height:180px}
+    @media(max-width:1100px){.hero:after{right:-250px}.hero-copy{max-width:600px}.hero h1.en{font-size:27px}.hero-visual{right:-100px;top:-70px;width:270px;height:270px}.quote{padding-right:180px}.}
+    @media(max-width:900px){.navlinks{display:none}.nav-call{display:none}.menu{display:block}.menu-call{display:inline-flex}.navlinks.open{display:flex;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 4%;flex-direction:column;align-items:center;text-align:center;border-bottom:1px solid var(--line)}.hero-grid,.about-grid,.contact-grid,.gov-grid{grid-template-columns:1fr}.focus-grid{grid-template-columns:1fr}.founder-grid{grid-template-columns:1fr}.quote{padding:30px 170px 30px 30px}.quote-lottie{width:160px;height:160px;right:0;bottom:0}.objectives-visual{min-height:140px}.}
+    @media(max-width:700px){.hero-visual{position:relative;right:auto;top:auto;width:230px;height:230px;margin:22px auto 0}.hero-copy{max-width:none}.hero:after{right:-250px;top:-210px}}
+    @media(max-width:560px){.brand span{font-size:18px}.brand img{width:45px;height:45px}nav{gap:12px}.nav-actions{gap:8px}.menu-wrap{gap:6px}.menu-call{width:32px;height:32px}.hero{padding:58px 0}.hero h1{font-size:42px;max-width:100%}.lead{font-size:16px}.cta{flex-direction:column;align-items:stretch}.btn{width:100%}.quote{padding:24px 130px 24px 20px}.quote h3{font-size:24px}.quote-lottie{width:124px;height:124px;right:0;bottom:0}.objectives-wrap{grid-template-columns:1fr}.objectives-visual{min-height:120px}.objective-dog{width:110px;height:110px}.footer-inner{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header><div class="container"><nav>
+    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Garuda Foundation logo"><span>GARUDA <b>FOUNDATION</b><small>Helping Birds • Animals • Nature</small></span></a>
+    <div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#objectives">Objectives</a><a href="#work">Our Work</a><a href="#founders">Founders</a><a href="#governance">Governance</a><a href="#contact">Contact</a><button class="lang" onclick="toggleLang()">हिन्दी</button></div>
+    <div class="nav-actions">
+      <a class="nav-call" href="#phone-details"><img src="assets/phone-call.svg" alt="Phone call icon">Call us</a>
+      <div class="menu-wrap">
+        <a class="menu-call" href="#phone-details" aria-label="View phone numbers"><img src="assets/phone-call.svg" alt="Phone icon"></a>
+        <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </nav></div></header>
+
+  <main id="home">
+    <section class="hero"><div class="container hero-grid">
+      <div class="hero-copy"><div class="eyebrow"><span class="dot"></span><span class="en">Animal & Environmental Welfare</span><span class="hi">पशु-पक्षी एवं पर्यावरण संरक्षण</span></div>
+        <h1 class="en">Save Birds • Save Animals • Save Nature</h1><h1 class="hi">पक्षियों • पशुओं • प्रकृति की रक्षा</h1>
+        <p class="lead en">Garuda Foundation is a non-political, non-profit social organization dedicated to the protection of animals, birds and the natural environment.</p><p class="lead hi">गरुड़ फाउंडेशन पशु-पक्षियों की रक्षा, पर्यावरण संरक्षण और प्राकृतिक संसाधनों की सुरक्षा के लिए समर्पित गैर-राजनीतिक, गैर-लाभकारी सामाजिक संस्था है।</p>
+        <div class="cta"><a class="btn btn-primary" href="#contact">Get in touch</a><a class="btn btn-outline" href="#objectives">Our objectives</a></div>
+      </div>
+      <div class="hero-visual"><div class="hero-panel"><div class="hero-lottie lottie-asset" aria-label="Parrot animation"></div></div></div>
+    </div></section>
+
+    <section id="about" class="about"><div class="container about-grid">
+      <div class="quote"><h3 class="en">A safer world for every living being.</h3><h3 class="hi">हर जीव के लिए एक सुरक्षित दुनिया।</h3><p class="en">The Foundation works for animal welfare, bird protection, environmental conservation and public awareness through lawful social initiatives.</p><p class="hi">संस्था पशु कल्याण, पक्षी संरक्षण, पर्यावरण संरक्षण और जन-जागरूकता के लिए वैधानिक सामाजिक प्रयासों के माध्यम से कार्य करती है।</p><div class="pill-row"><span class="pill">Non-profit</span><span class="pill">Non-political</span><span class="pill">Social welfare</span><span class="pill">Environment</span></div><div class="quote-lottie lottie-asset" aria-label="Cat sleeping animation"></div></div>
+      <div class="section-head" style="margin:0"><div class="kicker">About the foundation</div><h2 class="en">Compassion turned into action.</h2><h2 class="hi">करुणा से सेवा तक।</h2><p class="en">Based at Sujanganj Chauraha, Machhalli Shahar, Jaunpur, Uttar Pradesh, Garuda Foundation is built around practical welfare, conservation and awareness initiatives.</p><p class="hi">गरुड़ फाउंडेशन का मुख्यालय सुजानगंज चौराहा, मछली शहर, जनपद जौनपुर, उत्तर प्रदेश में रहेगा। संस्था का उद्देश्य सेवा, संरक्षण और जन-जागरूकता के माध्यम से प्रभाव पैदा करना है।</p><p class="en">Its stated rules emphasize democratic decision-making, responsible use of funds, transparency through annual reports and accounts, and equal treatment without discrimination.</p><p class="hi">संस्था के नियम लोकतांत्रिक निर्णय प्रक्रिया, धन के जिम्मेदार उपयोग, वार्षिक रिपोर्ट एवं लेखा-जोखा की पारदर्शिता तथा बिना भेदभाव के समान व्यवहार पर जोर देते हैं।</p></div>
+    </div></section>
+
+    <section id="objectives"><div class="container"><div class="section-head"><div class="kicker">What we stand for</div><h2 class="en">Five core objectives.</h2><h2 class="hi">पाँच प्रमुख उद्देश्य।</h2><p class="en">The following objectives are taken from the Foundation's stated organizational document.</p><p class="hi">निम्न उद्देश्य संस्था के उपलब्ध संगठनात्मक दस्तावेज से लिए गए हैं।</p></div>
+      <div class="objectives-wrap">
+        <article class="obj"><div class="num">01</div><h3 class="en">Protect animals & birds</h3><h3 class="hi">पशु-पक्षियों की रक्षा</h3><p class="en">Protect animals and birds and provide them a safe environment.</p><p class="hi">पशु-पक्षियों की रक्षा करना एवं उनके लिए सुरक्षित वातावरण उपलब्ध कराना।</p></article>
+        <article class="obj"><div class="num">02</div><h3 class="en">Conservation campaigns</h3><h3 class="hi">संरक्षण अभियान</h3><p class="en">Run environmental conservation, tree plantation and cleanliness campaigns.</p><p class="hi">पर्यावरण संरक्षण, वृक्षारोपण एवं स्वच्छता अभियान चलाना।</p></article>
+        <article class="obj"><div class="num">03</div><h3 class="en">Animal care & rehabilitation</h3><h3 class="hi">चिकित्सा एवं पुनर्वास</h3><p class="en">Arrange treatment, care and rehabilitation for stray and injured animals.</p><p class="hi">आवारा एवं घायल जानवरों की चिकित्सा, देखभाल एवं पुनर्वास की व्यवस्था करना।</p></article>
+        <article class="obj"><div class="num">04</div><h3 class="en">Shelters & veterinary care</h3><h3 class="hi">आश्रय एवं चिकित्सालय</h3><p class="en">Establish and operate gaushalas, bird shelters and animal hospitals.</p><p class="hi">गौशाला, पक्षी आश्रय और पशु चिकित्सालय की स्थापना एवं संचालन।</p></article>
+        <article class="obj"><div class="num">05</div><h3 class="en">Water & natural resources</h3><h3 class="hi">जल एवं प्राकृतिक संसाधन</h3><p class="en">Create public awareness for water conservation and protection of natural resources.</p><p class="hi">जल संरक्षण एवं प्राकृतिक संसाधनों की सुरक्षा हेतु जन-जागरूकता अभियान।</p></article>
+        <aside class="objectives-visual"><div class="objective-dog lottie-asset" aria-label="Dog sitting animation"></div></aside>
+      </div></div></section>
+
+    <section id="work" class="focus"><div class="container"><div class="section-head"><div class="kicker">Our focus</div><h2 class="en">Where the work comes alive.</h2><h2 class="hi">हमारा कार्यक्षेत्र।</h2></div><div class="focus-grid">
+      <article class="focus-card"><div class="icon"><img src="assets/feather.svg" alt="Feather icon"></div><h3 class="en">Bird Protection</h3><h3 class="hi">पक्षी संरक्षण</h3><p class="en">Promoting safer environments and support for birds, with special emphasis on awareness and welfare.</p><p class="hi">पक्षियों के लिए सुरक्षित वातावरण, सहायता एवं जन-जागरूकता को बढ़ावा देना।</p></article>
+      <article class="focus-card"><div class="icon"><img src="assets/paw-print.svg" alt="Paw print icon"></div><h3 class="en">Animal Welfare</h3><h3 class="hi">पशु कल्याण</h3><p class="en">Care, treatment and rehabilitation of stray and injured animals, along with shelter initiatives.</p><p class="hi">आवारा एवं घायल पशुओं की देखभाल, चिकित्सा, पुनर्वास और आश्रय संबंधी पहल।</p></article>
+      <article class="focus-card"><div class="icon"><img src="assets/sprout.svg" alt="Sprout icon"></div><h3 class="en">Nature & Awareness</h3><h3 class="hi">प्रकृति एवं जागरूकता</h3><p class="en">Tree plantation, cleanliness, water conservation and public awareness for natural-resource protection.</p><p class="hi">वृक्षारोपण, स्वच्छता, जल संरक्षण तथा प्राकृतिक संसाधनों की सुरक्षा हेतु जन-जागरूकता।</p></article>
+    </div></div></section>
+
+    <section id="founders" class="founders"><div class="container"><div class="section-head"><div class="kicker">Leadership</div><h2 class="en">Meet the founders.</h2><h2 class="hi">संस्थापक।</h2><p class="en">The Foundation has two founders. Their names can be added here once confirmed.</p><p class="hi">संस्था के दो संस्थापक हैं। नाम की पुष्टि होने पर यहाँ जोड़े जा सकते हैं।</p></div><div class="founder-grid">
+      <article class="founder"><div class="avatar">F1</div><div><h3>Founder 1</h3><p>Co-Founder, Garuda Foundation</p></div></article>
+      <article class="founder placeholder"><div class="avatar">F2</div><div><h3>Founder 2</h3><p>Co-Founder, Garuda Foundation</p></div></article>
+    </div></div></section>
+
+    <section id="governance" class="governance"><div class="container"><div class="section-head"><div class="kicker">Rules & governance</div><h2 class="en">Built around accountability.</h2><h2 class="hi">जवाबदेही पर आधारित व्यवस्था।</h2><p class="en">Key regulations and by-laws transcribed from the supplied document.</p><p class="hi">प्रस्तुत दस्तावेज में दिए गए प्रमुख नियम एवं विनियम।</p></div><div class="gov-grid">
+      <article class="gov-card"><h3>Core rules</h3><ol class="gov-list"><li>The Foundation is non-political, non-profit and social in nature.</li><li>Members must have good character and follow the constitution, objectives and work plan.</li><li>Foundation property/resources cannot be used for personal benefit.</li><li>No discrimination on the basis of caste, religion, region, politics, etc.</li><li>All decisions will be taken through a democratic process.</li><li>A member may be expelled for conduct contrary to the rules.</li><li>Income will be used only to fulfill the Foundation's objectives.</li><li>Funds may be raised through donations, membership fees, government/non-government assistance and other lawful means.</li><li>Annual reports and accounts will be made available to members.</li><li>Registration is to be undertaken under the applicable Society Registration Act / Trust Act / Company Act.</li><li>Disputes will be addressed through the Foundation's internal committee or the local court.</li></ol></article>
+    </div></div></section>
+
+    <section id="contact" class="contact"><div class="container"><div class="section-head"><div class="kicker" style="color:#7fe29a">Contact</div><h2 class="en">Help us protect what matters.</h2><h2 class="hi">आइए, मिलकर संरक्षण करें।</h2><p class="en">For support, volunteering, animal/bird assistance or general enquiries, contact the Foundation directly.</p><p class="hi">सहायता, स्वयंसेवा, पशु-पक्षी संबंधी सहायता या सामान्य जानकारी के लिए सीधे संस्था से संपर्क करें।</p></div><div class="contact-grid"><div class="contact-card">
+      <div class="contact-item"><div class="contact-icon"><img src="assets/mail.svg" alt=""></div><div><strong>Email</strong><a href="mailto:garudafoundation@gmail.com">garudafoundation@gmail.com</a><br><a href="mailto:ravikumarpal9120@gmail.com">ravikumarpal9120@gmail.com</a></div></div>
+      <div class="contact-item" id="phone-details"><div class="contact-icon"><img src="assets/phone-call.svg" alt=""></div><div><strong>Phone</strong><a href="tel:+919137871630">+91 9137871630</a><br><a href="tel:+917706867979">+91 77068 67979</a><br><a href="tel:+919930970789">+91 9930970789</a></div></div>
+      <div class="contact-item"><div class="contact-icon"><img src="assets/map-pin.svg" alt=""></div><div><strong>Address</strong><span>Sujanganj Chauraha, Machhalli Shahar, Jaunpur, Uttar Pradesh 222143</span></div></div>
+      <div class="contact-item"><div class="contact-icon"><img src="assets/globe.svg" alt=""></div><div><strong>Website</strong><a href="https://www.garudafoundation.in" target="_blank" rel="noopener">www.garudafoundation.in</a></div></div>
+    </div><div class="contact-note"><h3 class="en">Want to help?</h3><h3 class="hi">आप मदद करना चाहते हैं?</h3><p class="en">Whether you want to volunteer, report an injured animal or bird, support a conservation activity, or simply learn more, reach out using the details on this page.</p><p class="hi">यदि आप स्वयंसेवा करना चाहते हैं, घायल पशु या पक्षी की सूचना देना चाहते हैं, संरक्षण गतिविधि में सहयोग करना चाहते हैं या अधिक जानकारी चाहते हैं, तो ऊपर दिए गए संपर्क माध्यमों से जुड़ें।</p><a class="btn btn-primary" href="mailto:garudafoundation@gmail.com">Email the Foundation</a></div></div></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><div class="footer-brand"><img src="assets/logo.jpg" alt="Garuda Foundation logo">GARUDA <span>FOUNDATION</span></div><div>Save Birds • Save Animals • Save Nature</div><div>© <span id="year"></span> Garuda Foundation</div></div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
+    function toggleLang(){
+      const isHindi=document.body.classList.toggle('show-hi');
+      document.querySelectorAll('.en').forEach(el=>el.style.display=isHindi?'none':'');
+      document.querySelectorAll('.hi').forEach(el=>el.style.display=isHindi?'':'none');
+      document.querySelector('.lang').textContent=isHindi?'English':'हिन्दी';
+    }
+    document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+    document.addEventListener('click',event=>{
+      const navlinks=document.getElementById('navlinks');
+      const menuButton=document.querySelector('.menu');
+      if(navlinks.classList.contains('open')&&!navlinks.contains(event.target)&&!menuButton.contains(event.target)) navlinks.classList.remove('open');
+    });
+
+    async function loadLottieAsset(selector, assetPath) {
+      const node = document.querySelector(selector);
+      if (!node || !window.lottie || !window.JSZip) return;
+      try {
+        const response = await fetch(assetPath, { cache: 'no-store' });
+        const zipBuffer = await response.arrayBuffer();
+        const zip = await JSZip.loadAsync(zipBuffer);
+        const animationCandidates = Object.keys(zip.files).filter(name => name.toLowerCase().endsWith('.json') && !name.toLowerCase().endsWith('manifest.json'));
+        const fileName = animationCandidates[0] || Object.keys(zip.files).find(name => name.toLowerCase().endsWith('.json'));
+        if (!fileName) return;
+        const animationText = await zip.file(fileName).async('string');
+        const animationData = JSON.parse(animationText);
+        window.lottie.loadAnimation({
+          container: node,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          animationData
+        });
+      } catch (error) {
+        console.error('Lottie failed to load:', assetPath, error);
+      }
+    }
+
+    const lottieAssets = [
+      { selector: '.hero-lottie', path: 'assets/Parrot.lottie' },
+      { selector: '.quote-lottie', path: 'assets/Cat Sleeping.lottie' },
+      { selector: '.objective-dog', path: 'assets/Dog Sitting.lottie' }
+    ];
+    lottieAssets.forEach(({ selector, path }) => loadLottieAsset(selector, path));
+  </script>
+</body>
+</html>
