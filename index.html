@@ -38,10 +38,10 @@
 </head>
 <body>
   <header><div class="container"><nav>
-    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Garuda Foundation logo"><span>GARUDA <b>FOUNDATION</b><small>Helping Birds • Animals • Nature</small></span></a>
-    <div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#objectives">Objectives</a><a href="#work">Our Work</a><a href="#founders">Founders</a><a href="#governance">Governance</a><a href="#contact">Contact</a><button class="lang" onclick="toggleLang()">हिन्दी</button></div>
+    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Garuda Foundation logo"><span>GARUDA <b>FOUNDATION</b><small><span class="en">Helping Birds • Animals • Nature</span><span class="hi">पक्षियों • पशुओं • प्रकृति की सहायता</span></small></span></a>
+    <div class="navlinks" id="navlinks"><a href="#about"><span class="en">About</span><span class="hi">हमारे बारे में</span></a><a href="#objectives"><span class="en">Objectives</span><span class="hi">उद्देश्य</span></a><a href="#work"><span class="en">Our Work</span><span class="hi">हमारा कार्य</span></a><a href="#founders"><span class="en">Founders</span><span class="hi">संस्थापक</span></a><a href="#governance"><span class="en">Governance</span><span class="hi">नियमावली</span></a><a href="#contact"><span class="en">Contact</span><span class="hi">संपर्क</span></a><button class="lang" onclick="toggleLang()">हिन्दी</button></div>
     <div class="nav-actions">
-      <a class="nav-call" href="#phone-details"><img src="assets/phone-call.svg" alt="Phone call icon">Call us</a>
+      <a class="nav-call" href="#phone-details"><img src="assets/phone-call.svg" alt="Phone call icon"><span class="en">Call us</span><span class="hi">कॉल करें</span></a>
       <div class="menu-wrap">
         <a class="menu-call" href="#phone-details" aria-label="View phone numbers"><img src="assets/phone-call.svg" alt="Phone icon"></a>
         <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
@@ -54,7 +54,7 @@
       <div class="hero-copy"><div class="eyebrow"><span class="dot"></span><span class="en">Animal & Environmental Welfare</span><span class="hi">पशु-पक्षी एवं पर्यावरण संरक्षण</span></div>
         <h1 class="en">Save Birds • Save Animals • Save Nature</h1><h1 class="hi">पक्षियों • पशुओं • प्रकृति की रक्षा</h1>
         <p class="lead en">Garuda Foundation is a non-political, non-profit social organization dedicated to the protection of animals, birds and the natural environment.</p><p class="lead hi">गरुड़ फाउंडेशन पशु-पक्षियों की रक्षा, पर्यावरण संरक्षण और प्राकृतिक संसाधनों की सुरक्षा के लिए समर्पित गैर-राजनीतिक, गैर-लाभकारी सामाजिक संस्था है।</p>
-        <div class="cta"><a class="btn btn-primary" href="#contact">Get in touch</a><a class="btn btn-outline" href="#objectives">Our objectives</a></div>
+        <div class="cta"><a class="btn btn-primary" href="#contact"><span class="en">Get in touch</span><span class="hi">संपर्क करें</span></a><a class="btn btn-outline" href="#objectives"><span class="en">Our objectives</span><span class="hi">हमारे उद्देश्य</span></a></div>
       </div>
       <div class="hero-visual"><div class="hero-panel"><div class="hero-lottie lottie-asset" aria-label="Parrot animation"></div></div></div>
     </div></section>
@@ -106,10 +106,32 @@
     function toggleLang(){
       const isHindi=document.body.classList.toggle('show-hi');
       document.querySelectorAll('.en').forEach(el=>el.style.display=isHindi?'none':'');
-      document.querySelectorAll('.hi').forEach(el=>el.style.display=isHindi?'':'none');
+      document.querySelectorAll('.hi').forEach(el=>{
+        const inlineElements=['SPAN','A','BUTTON'].includes(el.tagName);
+        el.style.display=isHindi?(inlineElements?'inline':'block'):'none';
+      });
       document.querySelector('.lang').textContent=isHindi?'English':'हिन्दी';
     }
     document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+    const staticHindiText={
+      '.kicker':['About the foundation|फाउंडेशन के बारे में','What we stand for|हम किसके लिए कार्य करते हैं','Our focus|हमारा केंद्र','Leadership|नेतृत्व','Rules & governance|नियम एवं शासन','Contact|संपर्क'],
+      '.pill':['Non-profit|गैर-लाभकारी','Non-political|गैर-राजनीतिक','Social welfare|सामाजिक कल्याण','Environment|पर्यावरण'],
+      '.founder h3':['Founder 1|संस्थापक 1','Founder 2|संस्थापक 2'],
+      '.founder p':['Co-Founder, Garuda Foundation|सह-संस्थापक, गरुड़ फाउंडेशन','Co-Founder, Garuda Foundation|सह-संस्थापक, गरुड़ फाउंडेशन'],
+      '.gov-card h3':['Core rules|मुख्य नियम'],
+      '.gov-list li':['The Foundation is non-political, non-profit and social in nature.|फाउंडेशन गैर-राजनीतिक, गैर-लाभकारी और सामाजिक प्रकृति का है।','Members must have good character and follow the constitution, objectives and work plan.|सदस्यों का चरित्र अच्छा होना चाहिए और उन्हें संविधान, उद्देश्यों तथा कार्य योजना का पालन करना चाहिए।','Foundation property/resources cannot be used for personal benefit.|फाउंडेशन की संपत्ति या संसाधनों का उपयोग व्यक्तिगत लाभ के लिए नहीं किया जा सकता।','No discrimination on the basis of caste, religion, region, politics, etc.|जाति, धर्म, क्षेत्र, राजनीति आदि के आधार पर कोई भेदभाव नहीं होगा।','All decisions will be taken through a democratic process.|सभी निर्णय लोकतांत्रिक प्रक्रिया से लिए जाएंगे।','A member may be expelled for conduct contrary to the rules.|नियमों के विरुद्ध आचरण पर सदस्य को निष्कासित किया जा सकता है।','Income will be used only to fulfill the Foundation\'s objectives.|आय का उपयोग केवल फाउंडेशन के उद्देश्यों को पूरा करने के लिए होगा।','Funds may be raised through donations, membership fees, government/non-government assistance and other lawful means.|धन दान, सदस्यता शुल्क, सरकारी/गैर-सरकारी सहायता और अन्य वैध माध्यमों से जुटाया जा सकता है।','Annual reports and accounts will be made available to members.|वार्षिक रिपोर्ट और खाते सदस्यों के लिए उपलब्ध कराए जाएंगे।','Registration is to be undertaken under the applicable Society Registration Act / Trust Act / Company Act.|पंजीकरण लागू सोसायटी पंजीकरण अधिनियम, ट्रस्ट अधिनियम या कंपनी अधिनियम के अंतर्गत किया जाएगा।','Disputes will be addressed through the Foundation\'s internal committee or the local court.|विवादों का निपटारा फाउंडेशन की आंतरिक समिति या स्थानीय न्यायालय द्वारा किया जाएगा।'],
+      '.contact-item strong':['Email|ईमेल','Phone|फोन','Address|पता','Website|वेबसाइट'],
+      '.contact-note .btn':['Email the Foundation|फाउंडेशन को ईमेल करें'],
+      '.footer-inner > div:nth-child(2)':['Save Birds • Save Animals • Save Nature|पक्षियों को बचाएं • पशुओं को बचाएं • प्रकृति को बचाएं']
+    };
+    function syncStaticTranslations(isHindi){
+      Object.entries(staticHindiText).forEach(([selector,entries])=>document.querySelectorAll(selector).forEach((node,index)=>{
+        const [english,hindi]=entries[index].split('|');
+        node.textContent=isHindi?hindi:english;
+      }));
+      document.title=isHindi?'गरुड़ फाउंडेशन | पक्षी बचाएं • पशु बचाएं • प्रकृति बचाएं':'Garuda Foundation | Save Birds • Save Animals • Save Nature';
+    }
+    document.querySelector('.lang').addEventListener('click',()=>syncStaticTranslations(document.body.classList.contains('show-hi')));
     document.addEventListener('click',event=>{
       const navlinks=document.getElementById('navlinks');
       const menuButton=document.querySelector('.menu');
